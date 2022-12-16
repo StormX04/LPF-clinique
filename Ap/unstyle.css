@@ -1,0 +1,16 @@
+table {
+    border: 1px solid green;
+    
+}
+td {
+  border:1px solid green;
+  
+}
+th [scope="col"]{
+  border:1px solid green;
+  background-color: #696969;
+}
+.couleur {
+  color: orangered;
+  
+}
