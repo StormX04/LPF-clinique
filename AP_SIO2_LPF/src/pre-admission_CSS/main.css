@@ -1,0 +1,38 @@
+body {
+    background-image: url(../../image/background.png);
+    background-repeat: no-repeat;
+    background-size: 1548px 730px;
+}
+/*        Logo                        */
+header {
+    display: inline-flex;
+}
+.logo {
+    background-image: url(../../image/logo.png);
+    height: 150px;
+    width: 150px;
+    background-size: 150px 145px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.TitlePreAdmi {
+    text-decoration: underline;
+    text-decoration-color: #eb0227;
+    text-align: center;
+}
+.button_s {
+    display: inline-flex;
+    color: white;
+    background-color: #eb0227;
+    border-radius: 13px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    height: 45px;
+    width: 180px;
+    padding: 0px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-right: 20%;
+}
