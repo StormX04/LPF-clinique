@@ -1,7 +1,0 @@
-ID des roles du SI :
-1 = secretaire
-2= admin
-3= medecin
-
-authentificationAP.php & tableau_de_bord.php
-font une connexion à la bdd à adapter
