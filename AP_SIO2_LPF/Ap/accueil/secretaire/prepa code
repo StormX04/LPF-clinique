@@ -1,0 +1,39 @@
+
+
+
+echo'<div id="StatedtMed" class="statTableau" style="display: none;">';
+$reqStatMed = 'Select Choix_admission AS "Admis pour",Chambre, Heure_intervention, Date_hospitalisation, personnel.Nom FROM hospitalisation INNER JOIN personnel ON hospitalisation.Choix_medecin = personnel.ID WHERE Date_hospitalisation >= CURDATE() AND Date_hospitalisation < DATE_ADD(CURDATE(), INTERVAL 5 WEEK) AND personnel.ID ="'.$activeUsr.'" ;';
+$resultStatMed = mysqli_query($conn, $reqStatMed);
+echo '<table >';
+echo'<tr> <th>Admis pour : </th><th>Chambre : </th><th>Heure d\'intervention : </th><th>Date d\'hospitalisation : </th><th>Médecin : </th></tr>';
+while($colonn = mysqli_fetch_array($resultStatMed, MYSQLI_ASSOC)){
+	echo'<tr>';
+	foreach ($colonn as $value){
+		echo '<td >'.$value.'</td>' ;
+	}
+
+	echo'</tr>' ;
+	//print_r( $colonn) ;
+	
+}
+echo'</table>';
+echo'</div>';
+
+$nbrsemaine = 1;
+$lemedchoix = false;
+$leservchoix = false;
+
+$reqServL = 'Select * FROM service WHERE ID != 1 AND ID != 2;';
+$resultServL = mysqli_query($conn, $reqServL);
+echo'<label for="service-choix-P" style="padding-left : 1%;">Sélectionner un service : </label><select name="service-P" id="service-choix-P" value="" onChange="document.cookie= "servchoix=this.value"; <?php include("visu_preadmission.php"); ?>"><option value="*">-- Tout les services--</option>';
+while($colonn = mysqli_fetch_array($resultServL, MYSQLI_ASSOC)){
+	echo '<option value="'.$colonn['ID'].'">'.$colonn["libelle"].'</option>' ;
+}
+
+$reqMedL = 'Select Nom, Prenom, personnel.ID FROM personnel WHERE personnel.id_service != 1 AND personnel.id_service != 2;';
+$resultMedL = mysqli_query($conn, $reqMedL);
+echo '<div id="persoFiltre" ><label for="personnel-choix" style="padding-left : 4.5%;">Sélectionner un membre du personnel : </label><select name="personnel" id="personnel-choix" value="" onChange="document.cookie= "medchoix=this.value"; <?php include("visu_preadmission.php"); ?>"><option value="*">-- Tous les médecins --</option>';
+while($colonn = mysqli_fetch_array($resultMedL, MYSQLI_ASSOC)){
+	echo '<option value="'.$colonn['ID'].'">'.$colonn["Nom"].' '.$colonn["Prenom"].'</option>' ;
+}
+echo'</select>';

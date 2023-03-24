@@ -1,0 +1,30 @@
+
+/*      Position element                */
+.TitlePreAdmi {
+    text-decoration: underline;
+    text-decoration-color: #eb0227;
+    text-align: center;
+    padding-top: 5%;
+}
+.group_buttun{
+    margin-top: 3%;
+}
+.NumerosSecu{
+    margin: 5% 0% 0% 0%;
+    text-align: center;
+}
+
+
+/*      Form select         */
+input#NumerosSecuVerif {
+    position: relative;
+    display: flex;
+    width: 30em;
+    height: 3em;
+    line-height: 3;
+    background: #d1d5dbb0;
+    overflow: hidden;
+    border-radius: 0.25em;
+    margin: 0 auto;
+}
+

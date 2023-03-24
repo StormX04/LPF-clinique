@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="js.js"> </script>
+
+    <title>Page de connexion</title>
+</head>
+<body>
+  <div class="logo"></div>  
+  <div class="login"></div>
+  <div class="background-image"></div>
+	<div class="container">
+	  <form method="post" action="/Ap/accueil/php/authentificationAP.php">
+	  <label class="label-connexion" for="userID">Nom d'utilisateur :</label>
+	  <input class="input-connexion" id="userID" type="text" name="userID"> 
+	  <label class="label-connexion" for="mdp">Mot de passe :</label>
+	  <input class="input-connexion" id="mdp" type="password" name="mdp">
+	  <!---<label class="label-captcha" for="captcha">CapTcha :</label> <div class="capTcha" id="code">test</div>
+	  <input class="input-captcha" id="captcha" type="captcha" name="captcha"> --->
+	  <input class="bouton-connexion" type="submit" value="Se connecter"> 
+	  </form> 
+	</div>
+	
+</body>
+</html> 

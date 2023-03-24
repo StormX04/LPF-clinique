@@ -1,0 +1,163 @@
+html, body {
+  margin:0px;
+  height:100%;
+  width: 100%;
+}
+
+.container {
+  
+  position: absolute;
+  margin:0px;
+  height:85%;
+  width: 100%;
+  
+}
+
+.background-image {
+  position: absolute;
+  bottom: 0;
+  background-image: url(/Ap/accueil/image/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height:7%;
+}
+
+.logo {
+    background-image: url(/Ap/accueil/image/logo.png);
+    height: 14vh;
+    width: 9vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.infUser {
+  display:flex;
+  position: relative;
+  height: 65%;
+  background-color: #eb0227;
+  color: white;
+  justify-content: center;
+  margin : 0px 0px auto 0px;
+  
+}
+
+.leHeader {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+  height: 15%;
+}
+
+.textUser {
+  margin: auto;
+  padding: 0px 10px 0px 10px;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.boutonDeco {
+  margin : 0px 0px auto auto;
+  border-radius: 0px;
+  border-bottom-left-radius: 26px;
+  border: 0px solid ;
+  height: 65%;
+  font-size: 2vh;
+
+}
+
+.baseContent {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+  margin: 1% auto auto 10%;
+  width: 50%;
+  height: 41%;
+  border-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 15px;
+  
+}
+
+.baseText {
+  margin: 1% auto 1% auto;
+  color: #eb0227;
+  font-size: 3vh;
+  text-decoration: underline 2px;
+
+}
+.baseContentStyle {
+  margin: 1% 0% 1% 4%;
+  color: #eb0227;
+  font-size: 2vh;
+  line-height: 200%;
+}
+
+input[type=text] {
+  border: 1px solid #ff0028;
+  padding: 3px;
+  border-radius:5px;
+  background-color: Lavender;
+}
+input[type=submit] {
+  border: 1px solid #ff0028;
+  padding: 3px;
+  border-radius:5px;
+  color: white;
+  font-size: 2vh;
+  background-color: #ff0028;
+}
+select {
+  border: 1px solid #ff0028;
+  padding: 3px;
+  border-radius:5px;
+  background-color: Lavender;
+}
+
+form {
+  padding-left : 3%;
+}
+ 
+table {
+  background-color: Lavender;  border-collapse: collapse;  border:5px solid #eb0227; font-size: 1.2vh; 
+    
+}
+td {
+  border-right:4px solid #eb0227; font-size: 1.2vh ; line-height: 150%; text-align: center;
+  
+}
+th {
+  background-color: grey; color: white; padding-right: 10px; padding-left: 10px; border-right:4px solid #eb0227; font-size: 1.8vh; 
+}
+.statTableau {
+  margin: -32% 0% 1% 62.5%;
+  position: absolute;
+}
+
+
+button {
+  
+  border-radius: 16px;
+  background-color: #eb0227;
+  padding: 10px;
+  color: white;
+  border: 2px solid lavender;
+  font-size: 1.5vh;
+  font-weight: bold;
+  width: fit-content;
+}
+button:hover, input[type=submit]:hover {
+  background-color: #d10727;
+}
+
+
+@media screen and (max-width: 1090px) {
+  .logo {
+    
+    width: 13vh;
+  }
+
+}

@@ -1,0 +1,146 @@
+html, body {
+  margin:0px;
+  height:100%;
+  width: 100%;
+}
+
+.background-image {
+  position: absolute;
+  bottom: 0;
+  background-image: url(accueil/image/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height:7%;
+}
+
+.logo {
+    background-image: url(accueil/image/logo.png);
+    height: 14vh;
+    width: 9vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.login {
+    background-image: url(accueil/image/login.png);
+    height: 50vh;
+    width: 28vw;
+    right: 3%;
+    padding: 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 22%;
+    
+}
+form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+  margin: auto auto auto 10%;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  border-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 15px;
+}
+.container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width:100%;
+}
+.label-connexion {
+  margin: 1% auto 1% 27%;
+  color: #eb0227;
+  font-size: 2.5vh;
+}
+
+.label-captcha {
+  margin: 1% auto 1% 27%;
+  color: #eb0227;
+  font-size: 1.5vh;
+}
+
+.input-connexion {
+  margin: 0 auto 0 27%;
+  border-radius: 15px;
+  width: 40%;
+  border: 1px solid #ff0028;
+  font-size: 2vh;
+  padding: 8px;
+}
+
+.input-captcha {
+  margin: 0 auto 0 27%;
+  border-radius: 15px;
+  width: 20%;
+  border: 1px solid #ff0028;
+  font-size: 2vh;
+  padding: 8px;
+}
+
+.capTcha {
+  display:flex;
+
+  margin: 1% 27% 1% auto;
+  color: #eb0227;
+  font-size: 1.5vh;
+}
+
+.bouton-connexion {
+  margin: 5% auto 0 27%;
+  border-radius: 16px;
+  background-color: #eb0227;
+  padding: 15px;
+  color: white;
+  border: 4px solid lavender;
+  font-size: 2vh;
+  font-weight: bold;
+}
+.bouton-connexion:hover {
+  background-color: #d10727;
+}
+
+@media screen and (max-width: 1090px) {
+  .label-connexion {
+    margin-left: 22%;
+    font-size: 1.5vh;
+    border-width: 3px;
+  }
+
+  .input-connexion {
+    margin-left: 22%;
+    font-size: 1.4vh;
+    border-width: 1px;
+    width: 50%;
+    padding: 4px;
+  }
+
+  .bouton-connexion {
+    font-size: 1.5vh;
+    border-width: 3px;
+    margin-left: 22%;
+    padding: 12px;
+  }
+  .logo {
+    
+    width: 15vh;
+  }
+  form {
+    height: 35%;
+    width: 75%;
+    margin: auto;
+  }
+  .login {
+    display: none;
+  }
+}
+@media screen and (max-width: 1660px) {
+  .login {
+    width: 36vw;
+    
+  }
+}
