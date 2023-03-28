@@ -1,0 +1,16 @@
+ID des roles du SI :
+1 = secretaire
+2= admin
+3= medecin
+
+Information de connexion :
+
+Hugues Faure chef de service neurologie:
+login : Hug.Faure
+mdp : Faure.LPFmdp1
+role SI = médecin
+
+Sabine Poirier admin réseaux et système :
+login : Sab.Poirier
+mdp : Poirier.LPFmdp1
+role SI = admin
